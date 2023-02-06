@@ -15,7 +15,9 @@ var server = require('http').createServer(app);
 console.log(22222)
 var io = require('socket.io').listen(server);
 
-
+console.log("---------------------------------------")
+console.log(io)
+console.log("---------------------------------------")
 const middleware = require('./middleware');
 const services = require('./services');
 const session = require('./session');
