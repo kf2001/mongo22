@@ -6,7 +6,7 @@ function connetti(){
 
 
 
-alert("connesso!)
+alert("connesso!")
 
 }
 
