@@ -4,7 +4,7 @@ const socket = io();
 // with hooks and authentication.
 function connetti(){
 
-
+socket = io.connect();
 
 alert("connesso!")
 
