@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
-const logger = require('./logger');
+//const logger = require('./logger');
 const { createApp, startApp } = require('./app');
-
+/*
 process.on('unhandledRejection', (reason, p) =>
   logger.error('Unhandled Rejection at: Promise ', p, reason)
 );
@@ -16,3 +16,4 @@ main().catch((err) => {
   logger.error('App initialization failed', err);
   process.exit(11);
 });
+*/
