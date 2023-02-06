@@ -11,6 +11,10 @@ const configuration = require('@feathersjs/configuration');
 const express = require('@feathersjs/express');
 const socketio = require('@feathersjs/socketio');
 
+var server = require('http').createServer(app);
+console.log(22222)
+var io = require('socket.io').listen(server);
+
 
 const middleware = require('./middleware');
 const services = require('./services');
