@@ -1,10 +1,10 @@
-const { createServer } = require('http');
+/*const { createServer } = require('http');
 const path = require('path');
 const favicon = require('serve-favicon');
 const compress = require('compression');
 const helmet = require('helmet');
 const cors = require('cors');
-const logger = require('./logger');
+const logger = require('./logger');*/
 
 const feathers = require('@feathersjs/feathers');
 const configuration = require('@feathersjs/configuration');
@@ -12,12 +12,15 @@ const express = require('@feathersjs/express');
 const socketio = require('@feathersjs/socketio');
 var app=express();
 var server = require('http').createServer(app);
-console.log(22222)
+
 var io = require('socket.io').listen(server);
 
-console.log("---------------------------------------")
-console.log(io)
-console.log("---------------------------------------")
+io.sockets.on('connection', function (socket) {
+  
+  console.log("conn"
+}
+
+/*
 const middleware = require('./middleware');
 const services = require('./services');
 const session = require('./session');
@@ -95,3 +98,4 @@ module.exports.startApp = async function startApp(app) {
   });
   return server;
 };
+*/
