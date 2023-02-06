@@ -69,6 +69,9 @@ io.sockets.on('connection', function (socket) {
     });
   }
 });
+
+module.exports.createApp = function createApp() {}
+module.exports.startApp = function startApp() {}
 /*
 const middleware = require('./middleware');
 const services = require('./services');
